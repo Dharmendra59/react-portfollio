@@ -1,0 +1,223 @@
+.services {
+  background-color: #080808;
+  position: relative;
+  overflow: hidden;
+}
+
+.services::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255, 62, 111, 0.1) 0%, rgba(8, 8, 8, 0) 70%);
+  z-index: 0;
+}
+
+.services::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255, 184, 108, 0.1) 0%, rgba(8, 8, 8, 0) 70%);
+  z-index: 0;
+}
+
+.services-container {
+  position: relative;
+  z-index: 1;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #aaaaaa;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: -30px auto 60px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  padding: 40px 30px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.service-card:hover {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1);
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.service-card p {
+  color: #aaaaaa;
+  line-height: 1.7;
+  font-size: 1rem;
+  z-index: 2;
+  position: relative;
+}
+
+.service-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform-origin: top right;
+}
+
+.cta-container {
+  background: linear-gradient(135deg, rgba(255, 62, 111, 0.1), rgba(255, 184, 108, 0.1));
+  border-radius: 20px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.cta-content h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.cta-content p {
+  color: #aaaaaa;
+  font-size: 1.1rem;
+}
+
+/* Dark mode styles */
+body.dark-mode .services {
+  background-color: #f7f7f7;
+}
+
+body.dark-mode .services::before {
+  background: radial-gradient(circle, rgba(255, 62, 111, 0.05) 0%, rgba(247, 247, 247, 0) 70%);
+}
+
+body.dark-mode .services::after {
+  background: radial-gradient(circle, rgba(255, 184, 108, 0.05) 0%, rgba(247, 247, 247, 0) 70%);
+}
+
+body.dark-mode .section-subtitle {
+  color: #666666;
+}
+
+body.dark-mode .service-card {
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode .service-card:hover {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .service-card h3 {
+  color: #333333;
+}
+
+body.dark-mode .service-card p {
+  color: #666666;
+}
+
+body.dark-mode .cta-container {
+  background: linear-gradient(135deg, rgba(255, 62, 111, 0.05), rgba(255, 184, 108, 0.05));
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode .cta-content h3 {
+  color: #333333;
+}
+
+body.dark-mode .cta-content p {
+  color: #666666;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .cta-container {
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .cta-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .service-card {
+    padding: 30px 25px;
+  }
+  
+  .service-icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .service-card h3 {
+    font-size: 1.3rem;
+  }
+  
+  .cta-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .cta-content p {
+    font-size: 1rem;
+  }
+}
