@@ -57,7 +57,7 @@ const Home = () => {
             Hello, I'm
           </motion.span>
           <motion.h1 className="name" variants={itemVariants}>
-            John <span>Doe</span>
+            Dharmendra <span>Singh</span>
           </motion.h1>
           <motion.h2 className="profession" variants={itemVariants}>
             Creative <span className="highlight">Developer</span> & <span className="highlight">Designer</span>
@@ -101,7 +101,7 @@ const Home = () => {
             <motion.a href="https://twitter.com" target="_blank" rel="noopener noreferrer" variants={socialItemVariants}>
               <Twitter size={20} />
             </motion.a>
-            <motion.a href="mailto:contact@example.com" variants={socialItemVariants}>
+            <motion.a href="mailto:singhdhas9559604443a@gmail.com" variants={socialItemVariants}>
               <Mail size={20} />
             </motion.a>
           </motion.div>
@@ -114,10 +114,10 @@ const Home = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
         >
           <div className="image-container">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="John Doe" />
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="singh" />
           </div>
           <div className="experience-badge">
-            <span className="years">5+</span>
+            <span className="years">3+</span>
             <span className="text">Years<br/>Experience</span>
           </div>
         </motion.div>

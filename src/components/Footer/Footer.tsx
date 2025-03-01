@@ -67,15 +67,15 @@ const Footer = () => {
               <ul>
                 <li>
                   <MapPin size={18} />
-                  <span>New York, NY, USA</span>
+                  <span>Hardoi, Uttar Pradesh(241001)</span>
                 </li>
                 <li>
                   <Phone size={18} />
-                  <span>+1 (123) 456-7890</span>
+                  <span>+91-7380757082</span>
                 </li>
                 <li>
                   <Mail size={18} />
-                  <span>contact@example.com</span>
+                  <span>singhdhas9559604443a@gmail.com</span>
                 </li>
               </ul>
             </div>

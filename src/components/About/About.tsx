@@ -47,9 +47,9 @@ const About = () => {
 
   const stats = [
     { icon: <Briefcase size={24} />, count: '50+', label: 'Projects Completed' },
-    { icon: <Award size={24} />, count: '10+', label: 'Awards Received' },
-    { icon: <Heart size={24} />, count: '30+', label: 'Happy Clients' },
-    { icon: <GraduationCap size={24} />, count: '5+', label: 'Years Experience' }
+    { icon: <Award size={24} />, count: '10+', label: 'Awards & Certificates Received' },
+    { icon: <Heart size={24} />, count: '5+', label: 'Happy Clients' },
+    { icon: <GraduationCap size={24} />, count: '3+', label: 'Years Experience' }
   ];
 
   return (
@@ -72,7 +72,7 @@ const About = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <div className="image-wrapper">
-              <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80" alt="About Me" />
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="About Me" />
             </div>
             <div className="experience-shape">
               <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -87,7 +87,7 @@ const About = () => {
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
             >
-              Creative Developer & Designer Based in New York
+              Creative Developer & Designer 
             </motion.h3>
             
             <motion.p
@@ -96,7 +96,7 @@ const About = () => {
               animate={inView ? "visible" : "hidden"}
               transition={{ delay: 0.2 }}
             >
-              I'm a passionate developer and designer with over 5 years of experience creating stunning digital experiences. My journey in the digital world began when I discovered my love for bringing creative ideas to life through code.
+              I'm a passionate developer and designer with over 3 years of experience creating stunning digital experiences. My journey in the digital world began when I discovered my friends for bringing creative ideas to life through code.
             </motion.p>
             
             <motion.p
@@ -120,7 +120,7 @@ const About = () => {
                 <div className="skills">
                   <span>UI/UX</span>
                   <span>Figma</span>
-                  <span>Adobe XD</span>
+                  <span>Dribble</span>
                   <span>Photoshop</span>
                 </div>
               </div>
@@ -132,6 +132,10 @@ const About = () => {
                   <span>JavaScript</span>
                   <span>React</span>
                   <span>Node.js</span>
+                  <span>Express.js</span>
+                  <span>Python</span>
+                  <span>Java</span>
+                  <span>C & C++</span>
                 </div>
               </div>
             </motion.div>
