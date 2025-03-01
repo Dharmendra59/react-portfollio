@@ -52,6 +52,11 @@
   transition: all 0.3s ease;
   position: relative;
 }
+.nav-links li a:hover {
+  color: linear-gradient( #ff3e6f, #ffb86c);
+
+
+}
 
 .nav-links li a::after {
   content: '';

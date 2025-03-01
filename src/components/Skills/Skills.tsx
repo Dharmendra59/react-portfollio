@@ -11,34 +11,34 @@ const Skills = () => {
 
   const frontendSkills = [
     { name: 'HTML/CSS', level: 95 },
-    { name: 'JavaScript', level: 90 },
-    { name: 'React', level: 85 },
-    { name: 'Vue.js', level: 75 },
-    { name: 'TypeScript', level: 80 }
+    { name: 'JavaScript', level: 85 },
+    { name: 'React', level: 80 },
+    { name: 'Django', level: 90 },
+    { name: 'TypeScript', level: 70 }
   ];
 
   const backendSkills = [
     { name: 'Node.js', level: 85 },
-    { name: 'Express', level: 80 },
-    { name: 'MongoDB', level: 75 },
-    { name: 'SQL', level: 70 },
+    { name: 'Express', level: 75 },
+    { name: 'MongoDB', level: 80 },
+    { name: 'SQL', level: 90 },
     { name: 'Firebase', level: 85 }
   ];
 
   const designSkills = [
     { name: 'Figma', level: 90 },
-    { name: 'Adobe XD', level: 85 },
-    { name: 'Photoshop', level: 80 },
+    { name: 'Dribble', level: 85 },
+    { name: 'Photoshop', level: 90 },
     { name: 'Illustrator', level: 75 },
-    { name: 'UI/UX Design', level: 90 }
+    { name: 'UI/UX Design', level: 95 }
   ];
 
   const otherSkills = [
-    { name: 'Git/GitHub', level: 90 },
+    { name: 'Git/GitHub', level: 95 },
     { name: 'Responsive Design', level: 95 },
     { name: 'SEO', level: 75 },
     { name: 'Performance Optimization', level: 85 },
-    { name: 'Testing', level: 70 }
+    { name: 'Testing', level: 80 }
   ];
 
   const containerVariants = {
